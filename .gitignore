@@ -1,0 +1,103 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.pid
+*.seed
+*.pid.lock
+
+# Test artifacts and demo files
+test_*/
+test_demo/
+*.test
+/tmp/
+
+# Environment and configuration files
+.env
+.env.local
+.env.*.local
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Windows specific
+*.pdb
+
+# macOS specific
+.AppleDouble
+.LSOverride
+
+# Linux specific
+*~
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Local configuration
+config.local.*
+*.local
+
+# Documentation build artifacts
+/doc/
+*.html
+
+# Coverage reports
+tarpaulin-report.html
+coverage/
+
+# Profiling data
+*.profraw
+*.profdata
+
+# Flamegraph output
+flamegraph.svg
+perf.data* 

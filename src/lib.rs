@@ -5,7 +5,6 @@ pub mod utils;
 
 use std::collections::HashMap;
 use std::path::PathBuf;
-use anyhow::Result;
 
 pub use scanner::Scanner;
 pub use dedup::perform_deduplication;

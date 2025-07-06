@@ -1,7 +1,7 @@
 use std::path::{Path, PathBuf};
 use std::collections::HashSet;
 use std::fs;
-use std::io::{self, Read};
+use std::io::Read;
 use anyhow::{Result, Context};
 use blake3::Hasher;
 use walkdir::WalkDir;

@@ -1,0 +1,32 @@
+[package]
+name = "file-deduplication"
+version = "0.1.0"
+edition = "2025"
+description = "A fast, safe, and cross-platform file deduplication utility"
+authors = ["shaya arya"]
+license = "MIT"
+repository = "https://github.com/xeij/file-deduplication"
+readme = "README.md"
+keywords = ["deduplication", "files", "hash", "duplicate", "cli"]
+categories = ["command-line-utilities", "filesystem"]
+
+[[bin]]
+name = "dedup"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+walkdir = "2.4"
+blake3 = "1.5"
+indicatif = "0.17"
+rayon = "1.8"
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+console = "0.15"
+dialoguer = "0.11"
+humansize = "2.1"
+crossterm = "0.27"
+
+[dev-dependencies]
+tempfile = "3.8" 

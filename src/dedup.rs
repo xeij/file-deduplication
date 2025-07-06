@@ -25,8 +25,12 @@ pub fn perform_deduplication(
     };
 
     println!();
-    println!("{} {}", style(format!("🔄 {} duplicate files...", action_name)).cyan().bold(), 
-             if dry_run { style("(DRY RUN)").yellow() } else { style("").clear() });
+    if dry_run {
+        println!("{} {}", style(format!("🔄 {} duplicate files...", action_name)).cyan().bold(), 
+                 style("(DRY RUN)").yellow());
+    } else {
+        println!("{}", style(format!("🔄 {} duplicate files...", action_name)).cyan().bold());
+    }
 
     let mut total_result = ActionResult::new();
     let mut group_count = 0;
